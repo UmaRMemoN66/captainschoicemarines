@@ -1,0 +1,114 @@
+@media (max-width: 768px) {
+	.top-phone-wrap{
+		display: none;
+	}
+
+	.navbar{
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 10px;
+	}
+
+	.navbar-brand img{
+		max-width: 200px;
+	}
+
+	header{
+    margin-top: 80px;
+}
+
+	.welcome{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.vessels-repair ul{
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    list-style-position: inside;
+}
+
+
+}
+
+
+
+
+
+@media (max-width: 991px) {
+
+	body{
+		text-align: center;
+	}
+
+	.navbar-nav{
+		text-align: center;
+	}
+
+	.scroll-anim{
+		display: none;
+	}
+
+	.underline-h1 .u-line-hide{
+		display: none;
+	}
+
+	.underline-h1{
+		margin: 0px;
+		margin-bottom: 30px;
+	}
+
+	.overview-content {
+    padding: 0px 30px;
+	}
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+    .mg-overview p{
+	padding-right:30px;
+	padding-left: 30px;
+    }
+
+    .copyright-footer{
+    text-align: center;
+    }
+
+
+    /*------about-----*/
+
+    .about-text p{
+    padding-right: 0px;
+}
+
+.f-c-d{
+    padding: 0px 20px;
+}
+
+
+/*------service-----*/
+
+.s-after-sales p, .s-dry-docking p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.c-address{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+}

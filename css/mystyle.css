@@ -1,0 +1,1060 @@
+body,
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    color: #505962;
+    line-height: 2;
+    font-size: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.no-pad-man {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.test-color {
+    background-color: red;
+}
+
+/*--Website Snippet --*/
+.know-more-btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #000;
+    display: inline-block;
+    margin-top: 40px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.s-btn{
+        margin-top: 10px;
+}
+.know-more-btn:hover {
+    color:  #00c6ff;
+    text-decoration: none;
+}
+
+.know-more-btn:after {
+    content: "";
+    height: 25px;
+    width: 25px;
+    background: url(../img/know-more.svg) no-repeat;
+    position: absolute;
+    line-height: 25px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.thin-font {
+    font-weight: 400;
+}
+
+.thick-font {
+    font-weight: 700;
+}
+
+.underline-title{
+    height: 5px;
+    width: 30%;
+    background-color: #00c6ff;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.underline-title-sm{
+    height: 5px;
+    width: 10%;
+    background-color: #00c6ff;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.underline-title-smd{
+    height: 5px;
+    width: 10%;
+    background-color: #00c6ff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.underline-title-small{
+    height: 3px;
+    width: 30%;
+    background-color: #00c6ff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+/*--Start phone-top --*/
+
+.top-phone-wrap{
+    position: relative;
+}
+.top-phone{
+    font-size: 14px;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 4px 20px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    position:fixed;
+}
+
+.top-phone:hover{
+    background-color: #00c6ff;
+    text-decoration: none;
+    color: #fff;
+}
+
+header{
+    margin-top: 95px;
+}
+
+/*--Start Nav --*/
+
+.navbar{
+    padding: 20px 0px 20px 0px;
+    background-color: #fff !important;
+    box-shadow: 0px 1px 10px #999;
+}
+
+.navbar-nav{
+        text-align: right;
+    }
+
+.navbar-nav .nav-item .nav-link{
+    position: relative;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-item .nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #00c6ff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-nav .nav-item .nav-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #00c6ff;
+}
+/*--Hero Section --*/
+
+.scroll-anim{
+    position: absolute;
+    z-index: 999;
+   top: 80%;
+left: 50%;
+transform: translate(calc(-50% - 18.5px));
+}
+
+.scroll-anim img{
+    position: absolute;
+    text-align: center;
+}
+
+.meow {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: -5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.hero-section{
+    background: url(../img/hero-section.jpg) no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.welcome{
+    background-color:rgba(0,43,93,.9);
+    height: 550px;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 100px;
+    text-align: center;
+}
+
+.welcome h5{
+    color: #00fff0;
+    margin-bottom: 40px;
+}
+
+.welcome h1{
+    margin-bottom: 60px;
+}
+
+.welcome a{
+    color: #002b5d;
+    background-color: #00fff0;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.welcome a:hover{
+    background-color: #fff;
+}
+
+/*--Overview Section --*/
+
+.overview-section-inner{
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+
+.overview-img{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.overview-section-inner img{
+    padding-bottom: 60px;
+}
+
+.overview-section h1{
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+
+.underline-h1{
+    margin-left: -160px;
+    margin-bottom: 40px;
+}
+
+.underline-h1 li:first-child{
+    height: 12px;
+    width: 20%;
+    background-color: #00c6ff;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.underline-h1 li{
+    height: 12px;
+    width: 50%;
+    background-color: #00c6ff;
+    list-style: none;
+    display: inline-block;
+}
+
+.overview-content {
+    padding: 0px 100px 0px 30px;
+}
+
+
+/*--Service-Specialized in --*/
+.specialized-in{
+    background: url(../img/specialized.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    background-position: center;
+}
+
+.specialized-in:before{
+     content: "";  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+
+
+.specialized-in-inner{
+    padding-bottom: 120px;
+    padding-top:120px;
+    text-align: center;
+}
+
+/*--Service-Highlight Section --*/
+
+.highlight-service-inner{
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.h-service-title{
+    background-color:  #235b94;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.service-url {
+    text-decoration: none;
+    color: #000;
+}
+
+.service-url:hover {
+    text-decoration: none;
+}
+
+.service-url:hover .ship-build{
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transform: scale(1.03);
+    border-color:  #fff;
+}
+
+.h-service-title h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.h-service-title h2{
+    font-size: 52px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.underline-sm{
+    width: 120px;
+    height: 6px;
+    background-color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+}
+.ship-build{
+    text-align: center;
+    margin-bottom: 30px;
+    border:1px solid #000;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ship-build p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.ship-build img{
+    margin-bottom: 30px;
+}
+
+.oil-gas ul li{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid #00c6ff;
+    margin-bottom: 10px;
+}
+
+.oil-gas-s{ 
+    background-color:  #235b94;
+    height: 265px;
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.oil-gas-s h1{
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.oil-gas ul{
+    padding: 10px;
+    margin-bottom: 30px;
+
+}
+
+.bb-sm-logo{
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+}
+
+/*--Fun fact Section --*/
+
+.fun-facts{
+    background-color: #2a2d30;
+    color: #fff;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.fun-fact-list li{
+    list-style: none;
+}
+
+.fun-fact-list{
+    padding-bottom: 60px;
+}
+
+/*--Contact us Section --*/
+
+.contact-us-inner{
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.form-decoration input,
+.form-decoration textarea {
+    border: none;
+    border-bottom: 2px dotted #01a9c2;
+    border-radius: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.form-decoration input:focus,
+.form-decoration textarea:focus {
+    box-shadow: none;
+    border-color: #000;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.form-decoration button{
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 60px;
+}
+
+.form-decoration button:hover{
+    background-color: #000;
+}
+
+/*--Footer Section --*/
+
+.main-footer{
+    background-color: #000;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.f-mobile:before {
+    background: url(../img/f-mobile.png) no-repeat;
+    content: "";
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.f-fax:before {
+    background: url(../img/f-print.png) no-repeat;
+    content: "";
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.f-email:before {
+    background: url(../img/f-email.png) no-repeat;
+    content: "";
+    width: 25px;
+    height: 17px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.f-address:before {
+    background: url(../img/f-address.png) no-repeat;
+    content: "";
+    width: 24px;
+    height: 27px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mg-address h2, .ind-services h2{
+    font-weight: 500;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.mg-address h2:after, .ind-services h2:after{
+    content:"";
+    position: absolute;
+    border-bottom:solid 3px #01a9c2;
+    width: 30%;
+    display: block;
+    margin-top: -1px;
+    padding-bottom: 10px;
+}
+
+.ind-services p{
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #01a9c2;
+}
+
+.mg-overview p{
+    margin-top: 40px;
+    padding-right: 30px;
+}
+
+.main-footer hr{
+    display: block;
+    height: 1px;
+    background-color: gray;
+}
+
+.social-footer-icon {
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 20px;
+}
+
+.social-footer-icon i {
+    font-size: 1.5em;
+    padding-right: 15px;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+    color: #fff;
+}
+
+.fa-facebook {
+    color: #3b5998 !important;
+}
+
+
+.fa-facebook:hover {
+    color: #fff !important;
+}
+
+.fa-instagram{
+    color: #E1306C !important;
+}
+
+.fa-instagram:hover {
+    color: #fff !important;
+}
+
+.fa-youtube {
+    color: #c4302b !important;
+}
+
+.fa-youtube:hover {
+    color: #fff !important;
+}
+.copyright-footer{
+    font-size: 14px;
+    text-align: right;
+}
+
+.footer-copy{
+    margin-top: 10px;
+}
+
+
+.mg-address, .ind-services{
+    padding-top: 60px;
+}
+
+
+
+/*------------------------------------- About ---------------------------------------------------*/
+
+.about-tab{
+    background:url(../img/about.jpg) no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+}
+
+.about-tab a{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing:1px;
+}
+
+.activer{
+    background-color: #2e223a;
+}
+
+.about-tab ul{
+    margin-bottom: 0px !important;
+}
+
+.about-img, .about-text{
+        padding-top: 90px;
+}
+
+.about-text{
+    padding-bottom: 60px;
+}
+.about-text h1{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-text p{
+    padding-right: 60px;
+    margin-bottom: 0px;
+}
+
+/*--------------- anchor link -------------*/
+#md-link, #vision-link, #priorities-link, #facilities-link, #testimonial-link{
+   visibility:hidden;
+}
+
+/*--------------- anchor link -------------*/
+
+#message-md{
+    background-color: #f0f0f0;
+}
+.message-md-scroll{
+    height: 170px;
+    overflow-y: scroll;
+overflow-x: hidden;
+    padding-right: 30px;
+}
+
+
+
+#style-6::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar-thumb
+{
+    background-color: #00acee; 
+    background-image: -webkit-linear-gradient(45deg,
+                                              rgba(255, 255, 255, .2) 25%,
+                                              transparent 25%,
+                                              transparent 50%,
+                                              rgba(255, 255, 255, .2) 50%,
+                                              rgba(255, 255, 255, .2) 75%,
+                                              transparent 75%,
+                                              transparent)
+}
+
+.nm-panicker-group{
+    margin-top: 70px;
+}
+
+.nm-panicker-link{
+    margin-right: 10px;
+}
+
+.nm-panicker-link i{
+    font-size: 28px;
+}
+
+.nm-panicker-link i:hover{
+    color: #fff!important;
+}
+
+.nm-panicker-msg{
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.nm-panicker-img{
+    padding-top: 30px;
+}
+
+#vision-mission{
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+#vision-mission img{
+    padding-bottom: 60px;
+}
+
+.mission-wrap, .vision-wrap, .safety-wrap, .quality-wrap{
+    padding-bottom: 90px;
+}
+
+
+#priorities{
+    background: url(../img/priorities.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+}
+
+.priorities-inner{
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.priorities-inner h2{
+    padding-bottom: 60px;
+}
+
+.priorities-inner h2, .strategies-inner h2{
+    margin-top: 15px;
+}
+
+
+
+.strategies-inner p{
+    padding:0px 40px;
+}
+
+#strategies{
+    text-align: center;
+}
+
+.strategies-inner{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.i-c-d{
+    margin-top: 40px;
+}
+
+.f-c-d{
+    padding-right: 60px;
+}
+
+#facilities{
+    background-color:  #2e223a;
+    color: #fff;
+}
+
+.facilities-inner{
+    padding-bottom: 90px;
+    padding-top: 40px;
+}
+
+.facilities-inner p{
+    color: #e1cfb1;
+}
+.facilities-inner img{
+    margin-top: 90px;
+    margin-bottom: 0px;
+}
+
+.facilities-inner h1{
+    margin-top: 90px;
+}
+
+.facilities-inner h3{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.testimonial-inner{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.testimonial-inner img{
+    margin-bottom: 20px;
+}
+/*------------------------------------- Products ---------------------------------------------------*/
+
+
+.produts{
+
+    background: url(../img/products.png) no-repeat;
+    background-size: cover;
+        background-color: #000;
+}
+
+.produts-inner{
+    padding-top: 90px;
+    color: #fff;
+}
+
+.offshore, .vessels-repair, .recent-delivery{
+    padding: 40px;
+}
+
+.offshore{
+    background-color: #314165;
+        padding-bottom: 60px;
+        margin-bottom: 90px;
+}
+
+.recent-delivery{
+    background-color: #0293cc;
+        padding-bottom: 137px;
+        margin-bottom: 90px;
+}
+
+.recent-delivery ul li, .vessels-repair ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.vessels-repair{
+    background-color: #235b94;
+        padding-bottom: 60px;
+        margin-bottom: 90px;
+}
+
+.vessels-repair ul{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+}
+
+
+/*------------------------------------- Services ---------------------------------------------------*/
+
+
+.services{
+    text-align: center;
+}
+
+.services-inner{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.services-inner p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.s-img{
+    margin-bottom: 20px;
+}
+
+.service-title{
+    background-color:#235b94; 
+    font-size: 58px;
+    padding: 80px;
+    color: #fff;
+}
+
+.expert-united{
+background-color:#235b94; 
+    padding: 42px;
+    color: #fff;
+}
+
+.expert-united h1{
+margin-bottom: 10px;
+}
+
+.s-ship-repair, .s-after-sales, .s-design-engineer, .s-dry-docking{
+    border: 1px solid gray;
+    padding: 50px;
+}
+.s-ship-repair ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #235b94;
+}
+
+.s-ship-repair ul li:last-child{
+    border-bottom: none;
+}
+
+.s-after-sales, .s-design-engineer, .s-ship-repair, .s-dry-docking{
+    margin-top: 60px;
+}
+
+.s-after-sales h1, .s-design-engineer h1, .s-ship-repair h1, .s-ship-building h1, .s-dry-docking h1{
+    color: #235b94;
+}
+
+.s-after-sales p, .s-dry-docking p{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.s-dry-docking h2{
+    margin-top: 30px;
+    color: #000;
+}
+
+.s-dry-docking h4{
+    margin-top: 40px;
+    color: #235b94;
+}
+/*------------------------------------- Hse&Qa ---------------------------------------------------*/
+
+
+.hseqa-inner{
+    padding-top: 90px;
+}
+
+.ohs-policy img, .quality-policy img, .p-c{
+    margin-bottom: 90px;
+}
+
+.certificate{
+    background-color: #2e223a;
+    color: #fff;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.certificate img, .awards img{
+    margin-top: 40px;
+}
+
+.awards{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+/*------------------------------------- Gallery ---------------------------------------------------*/
+
+.gallery-header{
+    margin-top: 60px;
+}
+
+.gallery-inner{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.g-img{
+    margin-bottom: 60px;
+}
+
+.photo-gallery a{
+    padding-bottom: 30px;
+}
+
+.youtube-btn{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+.youtube-btn:hover{
+    text-decoration: none;
+    color: blue;
+}
+/*------------------------------------- Contact Us ---------------------------------------------------*/
+
+.contact-inner{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.contact-inner h2{
+    margin-bottom: 0px;
+}
+
+.contact-inner h5{
+    margin-bottom: 30px;
+}
+
+
+.c-address{
+    padding-left: 40px;
+}
+
+.c-map-a{
+    margin-top: 40px;
+}
+
+.form-decoration{
+    margin-top: 30px;
+}
+
+.c-address{
+    margin-bottom: 30px;
+}
+/*------------------------------------- Career ---------------------------------------------------*/
+
+.career{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.career-inner img{
+    margin-bottom: 40px;
+}
+
+.c-post{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.c-post p{
+    font-size: 14px;
+}
+
+.c-post h6{
+    background-color: #2e223a;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+
+
